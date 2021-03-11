@@ -7,6 +7,7 @@ import About from "./container/about/index";
 import Detail from "./container/Detail/index";
 import Form from "./container/Form/index";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import DetailForm from './pages/form'
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -26,9 +27,9 @@ export default class App extends Component {
           <Menu />
           <Switch>
             <Route path="/about">{/* <About /> */}</Route>
-            <Route path="/form/:id">
-              <Detail {...this.state} />
-              <Form {...this.state} />
+            <Route path="/form/:id" component={DetailForm}>
+              {/* <Detail {...this.state} />
+              <Form {...this.state} /> */}
             </Route>
             <Route path="/">
               <Header />
