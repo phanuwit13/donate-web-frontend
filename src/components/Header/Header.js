@@ -39,7 +39,7 @@ export default class Header extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col-12 col-sm-12 col-md-7 col-lg-5">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-5">
                 <img className="img-head" src={headerimage} alt="..." />
               </div>
               <div className="box-last col-12">
