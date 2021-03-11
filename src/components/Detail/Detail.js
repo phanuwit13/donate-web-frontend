@@ -13,7 +13,7 @@ class Detail extends Component {
     let { match } = this.props;
     axios({
       method: "GET",
-      url: "/api/getdataproject/" + match.params.id,
+      url: "https://service-donate.herokuapp.com/api/getdataproject/" + match.params.id,
     })
       .then((response) => {
         console.log(response);

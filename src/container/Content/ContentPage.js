@@ -11,7 +11,7 @@ export default class ContentPage extends Component {
   componentDidMount() {
     axios({
         method: 'GET',
-        url: '/api/getdataproject'
+        url: 'https://service-donate.herokuapp.com/api/getdataproject'
       })
       .then((response) => {
           console.log(response);
