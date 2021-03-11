@@ -14,9 +14,9 @@ export default class ContentPage extends Component {
         url: '/api/getdataproject'
       })
       .then((response) => {
-          console.log(response.data);
-        this.setValue(response.data)
-      }).catch(err => console.error(err))
+          console.log(response);
+        // this.setValue(response.data)
+      })
   }
 
   setValue = (data) => {
