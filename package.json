@@ -39,5 +39,5 @@
     ]
   },
   "homepage": ".",
-  "proxy": "https://bokboon.herokuapp.com/api"
+  "proxy": "https://service-donate.herokuapp.com"
 }

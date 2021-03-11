@@ -20,7 +20,7 @@ class Content extends Component {
                   <div className="card">
                     <img
                       src={
-                        "https://bokboon.herokuapp.com/images/project-img/" + value.img
+                        "https://service-donate.herokuapp.com/images/project-img/" + value.img
                       }
                       className="card-img-top img-content rounded-bottom"
                       alt=""

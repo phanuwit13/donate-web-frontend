@@ -20,7 +20,6 @@ class Detail extends Component {
         this.setValue(response.data[0]);
       })
       .catch((err) => console.error(err));
-
   }
 
   setValue = (value) => {
@@ -45,7 +44,7 @@ class Detail extends Component {
               <img
                 className="img-detail"
                 src={
-                  "https://bokboon.herokuapp.com/images/project-img/sub-img/" +
+                  "https://service-donate.herokuapp.com/images/project-img/sub-img/" +
                   this.state.data["sub-img1"]
                 }
                 alt="..."
@@ -53,7 +52,7 @@ class Detail extends Component {
               <img
                 className="img-detail"
                 src={
-                  "https://bokboon.herokuapp.com/images/project-img/sub-img/" +
+                  "https://service-donate.herokuapp.com/images/project-img/sub-img/" +
                   this.state.data["sub-img2"]
                 }
                 alt="..."
