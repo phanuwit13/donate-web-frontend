@@ -70,7 +70,7 @@ class Form extends Component {
         console.log(results.amount.value);
         axios({
           method: "POST",
-          url: "/api/senddonation",
+          url: "https://service-donate.herokuapp.com/api/senddonation",
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
