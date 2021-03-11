@@ -4,8 +4,8 @@ import Footer from "./container/Footer/index";
 import Header from "./container/Header/index";
 import Content from "./container/Content/index";
 import About from "./container/about/index";
-import Detail from "./container/Detail/index";
-import Form from "./container/Form/index";
+// import Detail from "./container/Detail/index";
+// import Form from "./container/Form/index";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DetailForm from './pages/form'
 export default class App extends Component {
