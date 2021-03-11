@@ -14,7 +14,7 @@ class Content extends Component {
             <span className="head-title">โครงการทั้งหมด</span>
           </div>
           <div className="row">
-            {this.props.data?.map((value, index) => {
+            {this.props.data.map((value, index) => {
               return (
                 <div key={index} className="col-12 col-sm-12 col-lg-6 col-xl-4">
                   <div className="card">
