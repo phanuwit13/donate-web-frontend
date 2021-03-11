@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component, Fragment } from "react";
+import Menu from "./container/Menu/index";
+import Footer from "./container/Footer/index";
+import Header from "./container/Header/index";
+import Content from "./container/Content/index";
+import About from "./container/about/index";
+import Detail from "./container/Detail/index";
+import Form from "./container/Form/index";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      detail: [],
+    };
+    this.handleSetDetail = this.handleSetDetail.bind(this);
+  }
+  handleSetDetail(value) {
+    this.setState({ detail: value });
+    localStorage.setItem("detail", JSON.stringify(value));
+  }
+  render() {
+    return (
+      <Fragment>
+        <Router>
+          <Menu />
+          <Switch>
+            <Route path="/about">{/* <About /> */}</Route>
+            <Route path="/form/:id">
+              <Detail {...this.state} />
+              <Form {...this.state} />
+            </Route>
+            <Route path="/">
+              <Header />
+              <Content {...this.state} action={this.handleSetDetail} />
+              <About />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </Fragment>
+    );
+  }
 }
-
-export default App;
