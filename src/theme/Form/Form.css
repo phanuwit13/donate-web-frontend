@@ -148,6 +148,7 @@
 }
 .form-check-label {
   margin-left: 3%;
+  margin-top: 4px;
   font-weight: 600 !important;
   font-size: 2.4vh !important;
   color: #2f2f2f !important;
@@ -169,6 +170,27 @@ input[type="checkbox"] {
   font-size: 2.4vh;
 }
 @media (max-width: 992px) {
+  .group-label{
+    font-size: 2.3vw !important;
+  }
+  .donate-title-form{
+    font-size: 3vw;
+  }
+  .form-control{
+    font-size: 2.5vw;
+  }
+  .form-group .sub-label{
+    font-size: 2vw;
+  }
+  .form-check{
+    font-size: 2.3vw;
+  }
+  .form-check-label{
+    font-size: 2.5vw !important;
+  }
+  .btn-donate{
+    font-size: 2.3vw;
+  }
   .box-left {
     display: flex;
     justify-content: center;
@@ -183,6 +205,16 @@ input[type="checkbox"] {
   }
 }
 @media (max-width: 768px) {
+  .group-label{
+    font-size: 2.5vw !important;
+  }
+  .form-group .sub-label{
+    font-size: 2vw !important;
+  }
+  .form-check-label {
+
+    font-size: 2.4vw !important;
+  }
   .form-content {
     width: 95%;
     padding-bottom: 100px;
@@ -202,7 +234,7 @@ input[type="checkbox"] {
   .donate-title-form {
     margin-top: 10%;
     font-weight: 600;
-    font-size: 3.1vh;
+    font-size: 3.1vw;
     /* line-height: 130%; */
     color: #5939c6;
     margin-left: 5%;
@@ -229,10 +261,73 @@ input[type="checkbox"] {
   .btn-donate {
     background-color: #5939c6;
     color: #ffffff;
-    height: 8vh;
+    height: 8vw;
     border-radius: 60px;
     width: 100%;
     font-weight: 500;
-    font-size: 2.4vh;
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 425px) {
+  .group-label{
+    font-size: 4vw !important;
+  }
+  .form-group .sub-label{
+    font-size: 3.5vw !important;
+  }
+  .form-check-label{
+    font-size: 4vw !important;
+  }
+  .form-content {
+    width: 95%;
+    padding-bottom: 100px;
+  }
+  .box-left {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-right: 0px;
+  }
+  .box-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-left: 0pc;
+  }
+  .donate-title-form {
+    margin-top: 10%;
+    font-weight: 600;
+    font-size: 5.1vw;
+    /* line-height: 130%; */
+    color: #5939c6;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .row {
+    margin-left: -15px !important;
+  }
+  .form-box1 {
+    height: auto;
+    border-radius: 30px;
+  }
+  .form-box2 {
+    width: 85%;
+    border-radius: 30px;
+  }
+  .form-box3 {
+    width: 71%;
+    border-radius: 30px;
+  }
+  .form-main {
+    height: auto;
+  }
+  .btn-donate {
+    background-color: #5939c6;
+    color: #ffffff;
+    height: 12vw;
+    border-radius: 60px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 4vw;
   }
 }

@@ -2,8 +2,8 @@
   margin-bottom: 4%;
   margin-top: 5%;
 }
-.box-content{
-    padding-bottom: 5%;
+.box-content {
+  padding-bottom: 5%;
 }
 .head-title {
   font-weight: 600;
@@ -63,12 +63,40 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .card-title {
+    font-size: 2.2vw;
+    line-height: 3vw;
+  }
   .head-title {
     font-weight: 600;
-    font-size: 3.2vh;
+    font-size: 3vw;
     margin: 2%;
     color: #5939c6;
+  }
+  .card-text {
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+}
+@media (max-width: 922px) {
+  .donate-btn {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+  .head-title {
+    font-weight: 600;
+    font-size: 4.5vw;
+    margin: 2%;
+    color: #5939c6;
+  }
+  .donate-btn {
+    font-size: 3vw;
   }
   .card {
     width: 100%;
@@ -78,5 +106,37 @@
     margin-right: 0.8%;
     margin-bottom: 1.15%;
     margin-left: 0.8%;
+  }
+  .card-text {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+}
+@media (max-width: 425px) {
+  .card-title {
+    font-size: 4vw;
+    line-height: 7vw;
+  }
+  .head-title {
+    font-weight: 600;
+    font-size: 4.5vw;
+    margin: 2%;
+    color: #5939c6;
+  }
+  .donate-btn {
+    font-size: 3vw;
+  }
+  .card {
+    width: 100%;
+    border-radius: 30px;
+    float: left;
+    margin-top: 2%;
+    margin-right: 0.8%;
+    margin-bottom: 1.15%;
+    margin-left: 0.8%;
+  }
+  .card-text {
+    font-size: 4vw;
+    line-height: 7vw;
   }
 }
